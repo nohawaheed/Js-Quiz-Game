@@ -20,8 +20,11 @@ export class Setting {
 
     if (questionArray.length > 0) {
       $("#setting").fadeOut(500, () => $("#quiz").fadeIn(500));
-    } else if (numOfQuestions == "") {
+    }
+    if (numOfQuestions == "") {
       $(".alert").css("display", "block");
+    } else {
+      $(".alert").css("display", "none");
     }
 
     new Quiz(questionArray);
