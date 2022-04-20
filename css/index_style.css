@@ -1,0 +1,46 @@
+:root {
+  --main-color: #653383;
+  --main-font: "Poppins", sans-serif;
+}
+.main-color {
+  color: var(--main-color);
+}
+
+#setting {
+  background-image: url(../images/Wave-100s-1366px.svg);
+  height: 100vh;
+  /* display: none; */
+}
+
+.row {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid black;
+  width: 65%;
+}
+article {
+  width: 65%;
+}
+
+.btn {
+  background-color: var(--main-color);
+}
+
+#quiz {
+  background-image: url(../images/Wave-100s-1366px.svg);
+  height: 100vh;
+  display: none;
+}
+
+#finish {
+  background-image: url(../images/Wave-100s-1366px.svg);
+  height: 100vh;
+  display: none;
+}
+.alert {
+  display: none;
+}
+
+.correct-answer,
+.incorrect-answer {
+  display: none;
+}

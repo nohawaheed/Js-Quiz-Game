@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index_style.css" />
+  </head>
+  <body>
+    <section id="setting">
+      <main class="container w-75 pt-5">
+        <div class="row border-bottom rounded-top m-auto p-5">
+          <h1 class="text-center main-color">Setting Your Quiz</h1>
+        </div>
+        <article class="bg-white m-auto p-4 d-flex flex-column rounded-bottom">
+          <h2 class="main-color pb-2 fs-6">Category</h2>
+          <select
+            name="Category"
+            id="Category"
+            class="w-100 form-select text-muted mb-3"
+          >
+            <option value="9">General Knowledge</option>
+            <option value="27">Animals</option>
+            <option value="15">Video Games</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+            <option value="18">Science: Computesr</option>
+          </select>
+          <h2 class="main-color pb-2 fs-6">Difficulty</h2>
+          <ul class="list-unstyled">
+            <li>
+              <label for="Easy">
+                <input
+                  type="radio"
+                  name="Difficulty"
+                  id="Easy"
+                  checked
+                  value="easy"
+                  class="mb-2 form-check-input"
+                />
+                Easy
+              </label>
+            </li>
+            <li>
+              <label for="Medium">
+                <input
+                  type="radio"
+                  name="Difficulty"
+                  id="Medium"
+                  value="medium"
+                  class="mb-2 form-check-input"
+                />
+                Medium
+              </label>
+            </li>
+            <li>
+              <label for="Hard">
+                <input
+                  type="radio"
+                  name="Difficulty"
+                  id="Hard"
+                  value="hard"
+                  class="form-check-input"
+                />
+                Hard
+              </label>
+            </li>
+          </ul>
+
+          <input
+            class="w-100 form-control mt-3"
+            type="number"
+            name="questions"
+            id="question-num"
+            placeholder="Number Of questions"
+          />
+          <div class="alert alert-danger mt-3">this input is required</div>
+          <div class="d-flex justify-content-end">
+            <button
+              id="start-btn"
+              class="btn rounded-pill px-4 py-2 text-white mt-4"
+            >
+              Start
+            </button>
+          </div>
+        </article>
+      </main>
+    </section>
+    <section id="quiz">
+      <main class="container w-75 pt-5">
+        <div class="row border-bottom rounded-top m-auto py-4 px-2">
+          <h1 class="text-center main-color">Quiz</h1>
+          <div class="d-flex justify-content-between">
+            <div>
+              <button class="btn bg-success correct-answer">Correct</button>
+              <button class="btn bg-danger incorrect-answer">InCorrect</button>
+            </div>
+            <button
+              id="question-btn"
+              class="btn rounded-pill px-4 py-2 text-white mt-4"
+            ></button>
+          </div>
+        </div>
+        <article class="bg-white m-auto p-4 d-flex flex-column rounded-bottom">
+          <div class="d-flex flex-row justify-content-start">
+            <h2 class="main-color fs-5 pe-1">Q:</h2>
+            <h2 id="quiz-question" class="main-color fs-5"></h2>
+          </div>
+
+          <div class="pt-2">
+            <ul id="answers-choices" class="list-unstyled"></ul>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button
+              id="submit-btn"
+              class="btn rounded-pill px-4 py-2 text-white mt-4"
+            >
+              Submit
+            </button>
+          </div>
+        </article>
+      </main>
+    </section>
+    <section id="finish">
+      <main class="container w-75 pt-5">
+        <div class="row border-bottom rounded-top m-auto py-4 px-2">
+          <h1 class="text-center main-color my-4">Finish</h1>
+        </div>
+        <article class="bg-white m-auto p-4 d-flex flex-column rounded-bottom">
+          <div class="d-flex flex-column align-items-center">
+            <h4 class="main-color">score</h4>
+            <h4 id="score" class="main-color"></h4>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button
+              id="try-again-btn"
+              class="btn rounded-pill px-4 py-2 text-white mt-4"
+            >
+              Try Again?
+            </button>
+          </div>
+        </article>
+      </main>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/mine.js" type="module"></script>
+  </body>
+</html>
